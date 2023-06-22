@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/playground')
   use('ThePrimeagen/harpoon')
   use('tpope/vim-fugitive')
+  use('preservim/nerdtree')
   use({'kvrohit/rasmus.nvim', as = 'rasmus',
     config = function()
         vim.cmd('colorscheme rasmus')
