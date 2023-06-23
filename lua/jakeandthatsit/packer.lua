@@ -1,4 +1,4 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+--- This file can be loaded by calling `lua require('plugins')` from your init.vim
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 vim.cmd [[colorscheme rasmus]]
@@ -22,19 +22,22 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/harpoon')
   use('tpope/vim-fugitive')
   use('preservim/nerdtree')
+--  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('MunifTanjim/prettier.nvim')
   use({'kvrohit/rasmus.nvim', as = 'rasmus',
     config = function()
         vim.cmd('colorscheme rasmus')
     end
     })
-    use {
-        'VonHeikemen/lsp-zero.nvim',
-      branch = 'v2.x',
-      requires = {
-        -- LSP Support
-        {'neovim/nvim-lspconfig'},             -- Required
-        {                                      -- Optional
-          'williamboman/mason.nvim',
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
+    requires = {
+    -- LSP Support
+      {'neovim/nvim-lspconfig'},             -- Required
+      {                                      -- Optional
+       'williamboman/mason.nvim',
           run = function()
             pcall(vim.cmd, 'MasonUpdate')
           end,
