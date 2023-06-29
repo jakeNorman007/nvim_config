@@ -1,7 +1,6 @@
 --- This file can be loaded by calling `lua require('plugins')` from your init.vim
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
-vim.cmd [[colorscheme rasmus]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
@@ -25,9 +24,9 @@ return require('packer').startup(function(use)
 --  use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
-  use({'kvrohit/rasmus.nvim', as = 'rasmus',
+  use({'folke/tokyonight.nvim', as = 'tokyonight',
     config = function()
-        vim.cmd('colorscheme rasmus')
+        vim.cmd('colorscheme tokyonight')
     end
     })
   use {
