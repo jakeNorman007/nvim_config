@@ -84,6 +84,12 @@ _G.packer_plugins = {
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  falcon = {
+    config = { "\27LJ\2\0026\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\23colorscheme falcon\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/jake/.local/share/nvim/site/pack/packer/start/falcon",
+    url = "https://github.com/fenetikm/falcon"
+  },
   harpoon = {
     loaded = true,
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -159,12 +165,6 @@ _G.packer_plugins = {
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  tokyonight = {
-    config = { "\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/jake/.local/share/nvim/site/pack/packer/start/tokyonight",
-    url = "https://github.com/folke/tokyonight.nvim"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -173,10 +173,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: tokyonight
-time([[Config for tokyonight]], true)
-try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight")
-time([[Config for tokyonight]], false)
+-- Config for: falcon
+time([[Config for falcon]], true)
+try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\23colorscheme falcon\bcmd\bvim\0", "config", "falcon")
+time([[Config for falcon]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

@@ -24,9 +24,9 @@ return require('packer').startup(function(use)
 --  use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
-  use({'folke/tokyonight.nvim', as = 'tokyonight',
+  use({'fenetikm/falcon', as = 'falcon',
     config = function()
-        vim.cmd('colorscheme tokyonight')
+        vim.cmd('colorscheme falcon')
     end
     })
   use {
