@@ -84,12 +84,6 @@ _G.packer_plugins = {
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  falcon = {
-    config = { "\27LJ\2\0026\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\23colorscheme falcon\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/jake/.local/share/nvim/site/pack/packer/start/falcon",
-    url = "https://github.com/fenetikm/falcon"
-  },
   harpoon = {
     loaded = true,
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -109,6 +103,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  material = {
+    config = { "\27LJ\2\0028\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\25colorscheme material\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/jake/.local/share/nvim/site/pack/packer/start/material",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   nerdtree = {
     loaded = true,
@@ -173,10 +173,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: falcon
-time([[Config for falcon]], true)
-try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\23colorscheme falcon\bcmd\bvim\0", "config", "falcon")
-time([[Config for falcon]], false)
+-- Config for: material
+time([[Config for material]], true)
+try_loadstring("\27LJ\2\0028\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\25colorscheme material\bcmd\bvim\0", "config", "material")
+time([[Config for material]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

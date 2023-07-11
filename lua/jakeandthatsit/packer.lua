@@ -24,9 +24,9 @@ return require('packer').startup(function(use)
 --  use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
-  use({'fenetikm/falcon', as = 'falcon',
+  use({'marko-cerovac/material.nvim', as = 'material',
     config = function()
-        vim.cmd('colorscheme falcon')
+        vim.cmd('colorscheme material')
     end
     })
   use {
