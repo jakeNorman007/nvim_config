@@ -26,9 +26,9 @@ return require('packer').startup(function(use)
   use('MunifTanjim/prettier.nvim')
   use({'ellisonleao/gruvbox.nvim', as = 'gruvbox',
     config = function()
-        vim.cmd('colorscheme gruvbox')
+      vim.cmd('colorscheme gruvbox')
     end
-    })
+  })
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
