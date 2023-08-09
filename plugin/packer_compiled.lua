@@ -84,12 +84,6 @@ _G.packer_plugins = {
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  gruvbox = {
-    config = { "\27LJ\2\0027\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0" },
-    loaded = true,
-    path = "/home/jake/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
   harpoon = {
     loaded = true,
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -114,6 +108,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jake/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
+  },
+  nordic = {
+    config = { "\27LJ\2\0026\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\23colorscheme nordic\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/jake/.local/share/nvim/site/pack/packer/start/nordic",
+    url = "https://github.com/AlexvZyl/nordic.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -173,10 +173,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: gruvbox
-time([[Config for gruvbox]], true)
-try_loadstring("\27LJ\2\0027\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
-time([[Config for gruvbox]], false)
+-- Config for: nordic
+time([[Config for nordic]], true)
+try_loadstring("\27LJ\2\0026\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\23colorscheme nordic\bcmd\bvim\0", "config", "nordic")
+time([[Config for nordic]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

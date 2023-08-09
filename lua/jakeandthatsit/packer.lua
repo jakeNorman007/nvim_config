@@ -24,9 +24,9 @@ return require('packer').startup(function(use)
 --  use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
-  use({'ellisonleao/gruvbox.nvim', as = 'gruvbox',
+  use({'AlexvZyl/nordic.nvim', as = 'nordic',
     config = function()
-      vim.cmd('colorscheme gruvbox')
+      vim.cmd('colorscheme nordic')
     end
   })
   use {
