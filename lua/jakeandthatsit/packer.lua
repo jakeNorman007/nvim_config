@@ -24,9 +24,9 @@ return require('packer').startup(function(use)
 --  use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
-  use({'AlexvZyl/nordic.nvim', as = 'nordic',
+  use({'rose-pine/neovim', as = 'rese-pine',
     config = function()
-      vim.cmd('colorscheme nordic')
+      vim.cmd('colorscheme rose-pine')
     end
   })
   use {
@@ -35,18 +35,13 @@ return require('packer').startup(function(use)
     requires = {
     -- LSP Support
       {'neovim/nvim-lspconfig'},             -- Required
-      {                                      -- Optional
-       'williamboman/mason.nvim',
-          run = function()
-            pcall(vim.cmd, 'MasonUpdate')
-          end,
-        },
-        {'williamboman/mason-lspconfig.nvim'}, -- Optional
+      {'williamboman/mason.nvim'},
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
         -- Autocompletion
         {'hrsh7th/nvim-cmp'},     -- Required
         {'hrsh7th/cmp-nvim-lsp'}, -- Required
         {'L3MON4D3/LuaSnip'},     -- Required
     }
-}
+  }
 end)
