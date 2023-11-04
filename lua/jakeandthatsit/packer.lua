@@ -12,7 +12,7 @@ return require('packer').startup(function(use)
     }
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	  -- or                            , branch = '0.1.x',
+	  -- or                          , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
@@ -21,12 +21,11 @@ return require('packer').startup(function(use)
   use('ThePrimeagen/harpoon')
   use('tpope/vim-fugitive')
   use('preservim/nerdtree')
---  use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
-  use({'rose-pine/neovim', as = 'rese-pine',
+  use({'folke/tokyonight.nvim', as = 'tokyonight',
     config = function()
-      vim.cmd('colorscheme rose-pine')
+      vim.cmd('colorscheme tokyonight-night')
     end
   })
   use {
